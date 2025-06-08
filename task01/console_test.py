@@ -64,10 +64,10 @@ class ConsoleTester:
                     continue
 
                 print("\nОтправка обращения...")
-                result = self.process_appeal(text, contact_info)
-                
-                if result:
-                    print("\n✅ Обращение успешно обработано!")
+               
+                department = self.process_appeal(text, contact_info)
+                if department:
+                    print(f"\n✅ Обращение направлено в: {department['department']}")
                     
 
             elif choice == "2":
