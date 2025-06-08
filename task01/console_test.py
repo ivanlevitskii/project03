@@ -68,7 +68,7 @@ class ConsoleTester:
                 
                 if result:
                     print("\n✅ Обращение успешно обработано!")
-                    print(json.dumps(result, indent=2, ensure_ascii=False))
+                    
 
             elif choice == "2":
                 print("\n=== Список департаментов ===")
